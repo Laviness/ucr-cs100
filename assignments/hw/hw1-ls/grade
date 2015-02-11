@@ -1,6 +1,6 @@
-85 / 100
+ 85   / 100  
 
-+15: Coloring
+    +15: Coloring
 -5: No test of parameter ordering
 -25: Valgrind
 
@@ -40,3 +40,4 @@ drwxr-xr-x  2 benavidzbenavidz  4096 Feb 10 10:43 .
 ==10940== For counts of detected and suppressed errors, rerun with: -v
 ==10940== Use --track-origins=yes to see where uninitialised values come from
 ==10940== ERROR SUMMARY: 15 errors from 3 contexts (suppressed: 4 from 4)
+
