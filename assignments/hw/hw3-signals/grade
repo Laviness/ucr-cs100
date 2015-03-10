@@ -1,1 +1,45 @@
-/ 100
+40 / 100
+
+PATH variable: 25/40
+    [10/10] Execute a program in the working directory.
+    [5/10] Execute a program not in the working directory.
+        Running ps works, but running ls gives an error when it shouldn't.
+
+        [rshell]Elvis@Lius-MacBook-Air.local:~/Documents/UCR/CS-100/rshell$ ls
+        error in execv: No such file or directory
+    [0/10] Execute a program using an absolute path.
+    [10/10] Attempt to execute a program that does not exist.
+            This should throw an error.
+
+^C signal: 10/30
+    [10/30] ^C when running a child process does not stop the entire shell.
+        The processes that are interrupted should not continue to run.
+        [rshell]Elvis@Lius-MacBook-Air.local:~/Documents/UCR/CS-100/rshell$ ./a.out
+        1
+        2
+        3
+        4
+        5
+        ^C[rshell]Elvis@Lius-MacBook-Air.local:~/Documents/UCR/CS-100/rshell$ ps
+          PID TTY           TIME CMD
+        38757 ttys000    0:00.05 -bash
+        39246 ttys000    0:00.01 script
+        37610 ttys001    0:00.04 -bash
+        39247 ttys002    0:00.01 /bin/bash -i
+        39249 ttys002    0:00.00 bin/rshell
+        39252 ttys002    0:00.00 (grep)
+        39254 ttys002    0:00.00 (a.out)
+cd and prompt: 30/30
+    (The prompt must change correctly for all of the cases below for full
+     credit.)
+    [8/8] Change to a directory underneath the current working directory.
+    [8/8] Change to a directory above the current working directory.
+    [7/7] Change to a directory specified using an absolute path.
+    [7/7] Change to a directory which does not exist.
+
+extra credit: 0/20
+    [0/20] ^z, fg, and bg
+
+-25: rshell segfaults on execution.
+
+Total: 40/100
