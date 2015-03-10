@@ -2,11 +2,7 @@
 
 PATH variable: 25/40
     [10/10] Execute a program in the working directory.
-    [5/10] Execute a program not in the working directory.
-        Running ps works, but running ls gives an error when it shouldn't.
-
-        [rshell]Elvis@Lius-MacBook-Air.local:~/Documents/UCR/CS-100/rshell$ ls
-        error in execv: No such file or directory
+    [10/10] Execute a program not in the working directory.
     [0/10] Execute a program using an absolute path.
     [10/10] Attempt to execute a program that does not exist.
             This should throw an error.
@@ -42,4 +38,4 @@ extra credit: 0/20
 
 -25: rshell segfaults on execution.
 
-Total: 40/100
+Total: 45/100
