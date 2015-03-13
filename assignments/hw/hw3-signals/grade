@@ -1,4 +1,4 @@
-40 / 100
+55 / 100
 
 PATH variable: 25/40
     [10/10] Execute a program in the working directory.
@@ -36,6 +36,6 @@ cd and prompt: 30/30
 extra credit: 0/20
     [0/20] ^z, fg, and bg
 
--25: rshell segfaults on execution.
+-10: rshell segfaults on execution.
 
 Total: 45/100
